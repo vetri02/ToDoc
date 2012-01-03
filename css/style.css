@@ -1,0 +1,119 @@
+/*
+CSS file created with:Instant Blueprint - Create a web project framework in seconds.
+http://instantblueprint.com
+
+Project: ToDoc
+File: css/style.css
+Last edited: January 3, 2012, 9:58 am
+*/
+
+/*  Main  */
+body {
+ 	background-color: #fff; 
+	background-image: 
+	  linear-gradient(#eee .05em, transparent .05em);
+	background-image: 
+	  -webkit-linear-gradient(#eee .05em, transparent .05em);
+	background-size: 100% 3em;	
+	
+ color:#000;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+
+#container {
+ margin:0 auto;
+	
+	
+	
+ width:95%;
+ height:100%;
+}
+
+.todo {
+ 	
+}
+
+.todo .top {
+	/*background:url('../images/noise.png') top left repeat;*/
+	/* IE10 */ 
+	background-image: -ms-linear-gradient(top, #64717E 0%, #36434F 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #64717E 0%, #36434F 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #64717E 0%, #36434F 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #64717E), color-stop(1, #36434F));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #64717E 0%, #36434F 100%);
+
+	/* Proposed W3C Markup */ 
+	background-image: linear-gradient(top, #64717E 0%, #36434F 100%);
+	
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-topright: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+	height:5%;
+}
+
+.todo .top h1 {
+	color:#fff;
+	line-height:40px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.todo .top .border {
+	width:100%;
+	height:2px;
+	border:dashed 1px #627a92;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-top-width: 0;
+	position: relative;
+	top: -7px;
+}
+
+.todo .content {
+	
+}
+
+.todo .bottom {
+	
+	height:15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-moz-box-shadow:     1px 1px 0 rgba(0, 0, 0, .3),
+	                       3px 3px 0 #fff,
+	                       4px 4px 0 rgba(0, 0, 0, .2),
+	                       6px 6px 0 #fff,
+	                       7px 7px 0 rgba(0, 0, 0, .1),
+	                       9px 9px 0 #fff,
+	                       10px 10px 0 rgba(0, 0, 0, .1);
+	  -webkit-box-shadow:  1px 1px 0 rgba(0, 0, 0, .3),
+	                       3px 3px 0 #fff,
+	                       4px 4px 0 rgba(0, 0, 0, .2),
+	                       6px 6px 0 #fff,
+	                       7px 7px 0 rgba(0, 0, 0, .1),
+	                       9px 9px 0 #fff,
+	                       10px 10px 0 rgba(0, 0, 0, .1);
+	  box-shadow:          1px 1px 0 rgba(0, 0, 0, .3),
+	                       3px 3px 0 #fff,
+	                       4px 4px 0 rgba(0, 0, 0, .2),
+	                       6px 6px 0 #fff,
+	                       7px 7px 0 rgba(0, 0, 0, .1),
+	                       9px 9px 0 #fff,
+	                       10px 10px 0 rgba(0, 0, 0, .1);
+}
