@@ -7,31 +7,32 @@ File: css/style.css
 Last edited: January 3, 2012, 9:58 am
 */
 
+
 /*  Main  */
+
+html, body {
+height: 100%;
+}
+
 body {
- 	background-color: #fff; 
-	background-image: 
-	  linear-gradient(#eee .05em, transparent .05em);
-	background-image: 
-	  -webkit-linear-gradient(#eee .05em, transparent .05em);
-	background-size: 100% 3em;	
+ 	
+	
 	
  color:#000;
  font-family: Arial, Helvetica, sans-serif;
  font-size: 13px;
+ 
 }
 
 #container {
- margin:0 auto;
-	
-	
-	
+ margin:5px auto;	
+ min-height: 100%;	
  width:95%;
- height:100%;
+ 
 }
 
 .todo {
- 	
+ min-height: 100%;	
 }
 
 .todo .top {
@@ -61,7 +62,10 @@ body {
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	
-	height:5%;
+	height:40px;
+	
+	
+	
 }
 
 .todo .top h1 {
@@ -82,38 +86,82 @@ body {
 	top: -7px;
 }
 
+
+.todo .rippedPaper {
+	height:23px;
+	position:relative;
+	top:-7px;
+	z-index:-20;
+	background:#fff url('../images/rippedPaper.png') top left repeat-x;
+	border:solid  rgba(0, 0, 0, .3);
+	border-width:0 1px;
+}
+
 .todo .content {
+	position:relative;
+	top:-7px;
+	z-index:5;
+ border:solid  rgba(0, 0, 0, .3);
+ border-width:0 1px;
+ padding:5px 10px;	
+	background-color: #fff; 
 	
+	/* IE10 */ 
+	background-image: -ms-linear-gradient(#eee .05em, transparent .05em);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(#eee .05em, transparent .05em);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(#eee .05em, transparent .05em);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);
+
+	/* Proposed W3C Markup */ 
+	background-image: linear-gradient(#eee .05em, transparent .05em);
+	background-size: 100% 3em;
+	height:150px;
+	line-height:3em;
+	vertical-align:middle;
+	/*box-shadow: inset 0 15px 15px -15px #000;*/
 }
 
 .todo .bottom {
-	
+	position: relative;
+	top: -11px;
 	height:15px;
+	background-color:#fff;
 	-webkit-border-bottom-right-radius: 15px;
 	-webkit-border-bottom-left-radius: 15px;
 	-moz-border-radius-bottomright: 15px;
 	-moz-border-radius-bottomleft: 15px;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
-	-moz-box-shadow:     1px 1px 0 rgba(0, 0, 0, .3),
-	                       3px 3px 0 #fff,
-	                       4px 4px 0 rgba(0, 0, 0, .2),
-	                       6px 6px 0 #fff,
-	                       7px 7px 0 rgba(0, 0, 0, .1),
-	                       9px 9px 0 #fff,
-	                       10px 10px 0 rgba(0, 0, 0, .1);
-	  -webkit-box-shadow:  1px 1px 0 rgba(0, 0, 0, .3),
-	                       3px 3px 0 #fff,
-	                       4px 4px 0 rgba(0, 0, 0, .2),
-	                       6px 6px 0 #fff,
-	                       7px 7px 0 rgba(0, 0, 0, .1),
-	                       9px 9px 0 #fff,
-	                       10px 10px 0 rgba(0, 0, 0, .1);
-	  box-shadow:          1px 1px 0 rgba(0, 0, 0, .3),
-	                       3px 3px 0 #fff,
-	                       4px 4px 0 rgba(0, 0, 0, .2),
-	                       6px 6px 0 #fff,
-	                       7px 7px 0 rgba(0, 0, 0, .1),
-	                       9px 9px 0 #fff,
-	                       10px 10px 0 rgba(0, 0, 0, .1);
-}
+	-moz-box-shadow:       0px 1px 0 rgba(0, 0, 0, .3),
+	                       0px 3px 0 #fff,
+	                       0px 4px 0 rgba(0, 0, 0, .2),
+	                       0px 6px 0 #fff,
+	                       0px 7px 0 rgba(0, 0, 0, .1),
+	                       0px 9px 0 #fff,
+	                       0px 10px 0 rgba(0, 0, 0, .1);
+	  -webkit-box-shadow:  0px 1px 0 rgba(0, 0, 0, .3),
+	                       0px 3px 0 #fff,
+	                       0px 4px 0 rgba(0, 0, 0, .2),
+	                       0px 6px 0 #fff,
+	                       0px 7px 0 rgba(0, 0, 0, .1),
+	                       0px 9px 0 #fff,
+	                       0px 10px 0 rgba(0, 0, 0, .1);
+	  box-shadow:	       0px 1px 0 rgba(0, 0, 0, .3),
+						   0px 3px 0 #fff,
+						   0px 4px 0 rgba(0, 0, 0, .2),
+						   0px 6px 0 #fff,
+						   0px 7px 0 rgba(0, 0, 0, .1),
+						   0px 9px 0 #fff,
+						   0px 10px 0 rgba(0, 0, 0, .1);
+						
+						
+	}
