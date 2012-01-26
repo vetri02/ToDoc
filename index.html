@@ -8,7 +8,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
   
   <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/store.min.js"></script>
+  
+  <script type="text/javascript" src="js/amplify.core.min.js"></script>
+  <script type="text/javascript" src="js/amplify.store.min.js"></script>	
   <script type="text/javascript" src="js/main.js"></script>	
 </head>
 <body>
@@ -23,18 +25,26 @@
 	</div>
 	<div class="rippedPaper"></div>
 	<div class="control cf">
-		<a href="#" class="button icon approve">Done</a>
+		<div class="main">
+			<a href="javascript:;" id="done" class="button icon approve">Done</a>
 		
-		<a href="#" class="button icon remove delete">Delete</a>
-		<a href="#" class="button icon add">Add</a>
+			<a href="javascript:;" id="delete" class="button icon trash danger delete">Delete</a>
+			<a href="javascript:;" id="add" class="button icon add">Add</a>
+		</div>
+		<div class="taskEditAdd">
+			<a href="javascript:;" id="back" class="button icon arrowleft">Back</a>
+			
+			<a href="javascript:;" id="edit" class="button icon edit">Edit</a>
+			<a href="javascript:;" id="save" class="button icon approve save">Save</a>		
+		</div>
 	</div>
-	<div class="content">
+	<div class="content" id="content">
 		<ul>
-			<li><input type="checkbox" name="todo1" value="1" id="todo1"><label for="todo1">Check-me</label>xzvzx</li>
-			<li><input type="checkbox" name="todo2" value="2" id="todo2"><label for="todo2">Check-me</label>xzvzx</li>
-			<li><input type="checkbox" name="todo3" value="3" id="todo3"><label for="todo3">Check-me</label>xzvzx</li>
-			<li><input type="checkbox" name="todo4" value="4" id="todo4"><label for="todo4">Check-me</label>xzvzx</li>
-			<li><input type="checkbox" name="todo5" value="5" id="todo5"><label for="todo5">Check-me</label>xzvzx</li>
+			<li><input type="checkbox" name="todo1" value="1" id="todo1"><label for="todo1">Check</label>xzvzx</li>
+			<li><input type="checkbox" name="todo2" value="2" id="todo2"><label for="todo2">Check</label>xzvzx</li>
+			<li><input type="checkbox" name="todo3" value="3" id="todo3"><label for="todo3">Check</label>xzvzx</li>
+			<li><input type="checkbox" name="todo4" value="4" id="todo4"><label for="todo4">Check</label>xzvzx</li>
+			<li><input type="checkbox" name="todo5" value="5" id="todo5"><label for="todo5">Check</label>xzvzx</li>
 		</ul>	
 	</div>	
 	<div class="bottom"></div>

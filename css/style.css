@@ -107,7 +107,9 @@ body {
 	vertical-align:middle;	
 }
 
-.todo .control .add,.todo .control .delete {float:right; margin:9px 0 0 9px;}
+.todo .control .add,.todo .control .delete, .todo .control .edit,.todo .control .save  {float:right; margin:9px 0 0 9px;}
+
+.todo .control .taskEditAdd {display:none;}
 
 
 .todo .content {
@@ -144,6 +146,8 @@ body {
 }
 
 .todo .content ul li {list-style-type:none; line-height:3em; vertical-align:middle;}
+
+.todo .content textarea {width:98.5%; height:150px; border-radius:4px; border:solid 1px #ccc; margin:5px auto;}
 
 .todo .bottom {
 	position: relative;
