@@ -107,9 +107,10 @@ body {
 	vertical-align:middle;	
 }
 
-.todo .control .add,.todo .control .delete, .todo .control .edit,.todo .control .save  {float:right; margin:9px 0 0 9px;}
+.todo .control .add,.todo .control .edit,.todo .control .save  {float:right; margin:9px 0 0 9px;}
 
 .todo .control .taskEditAdd {display:none;}
+
 
 
 .todo .content {
@@ -146,6 +147,8 @@ body {
 }
 
 .todo .content ul li {list-style-type:none; line-height:3em; vertical-align:middle;}
+
+.todo .content ul li.strike {text-decoration:line-through; color:#ccc;}
 
 .todo .content textarea {width:98.5%; height:150px; border-radius:4px; border:solid 1px #ccc; margin:5px auto;}
 
@@ -208,7 +211,9 @@ body {
 	  background-position: -1px -8px;
 	}
 	
-	
+	.charLeft {text-align:center;}
+
+	#charsLeft {color:#3072b3; font-weight:bold;}
 	
 	/* For modern browsers */
 	.cf:before,
