@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+    xmlns:gap	= "http://phonegap.com/ns/1.0"
+    id		= "com.vetri.toDoc"
+    version 	= "1.0.0">
+
+    <name>ToDoc</name>
+
+    <description>
+        ToDo Application
+    </description>
+
+    <author href="http://vetri02.github.com"
+        email="vetri02@gmail.com">
+        Vetrichelvan Jeyapalpandy
+    </author>
+
+    <gap:platforms>
+        <gap:platform name="android" minVersion="2.2" />
+        <gap:platform name="webos" />
+        <gap:platform name="symbian.wrt" />
+        <gap:platform name="blackberry" project="widgets"/>
+    </gap:platforms>
+
+    <icon src="images/ic_72x72.png" width="72" height="72" />
+    	<icon src="images/ic_48x48.png" width="48" height="48" />
+    <icon src="images/ic_36x36.png" width="36" height="36" />
+    
+    <gap:splash src="images/splash.png" width="300" height="200"/>
+    
+    <preference name="permissions" value="none"/>
+    
+</widget>

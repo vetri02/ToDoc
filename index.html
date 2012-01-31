@@ -1,7 +1,11 @@
 <!DOCTYPE HTML>
 <head>
- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ 
+ <meta charset=utf-8>
+
   <title>ToDoc</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
   <link rel="stylesheet" type="text/css" href="css/gh-buttons.css" media="screen">	
@@ -15,44 +19,41 @@
 </head>
 <body>
 
-<div id="container">
-
-
-<div class="todo">
-	<div class="top">
-		<h1>ToDoc</h1>
-		<div class="border"></div>
-	</div>
-	<div class="rippedPaper"></div>
-	<div class="control cf">
-		<div class="main">
-			<!--a href="javascript:;" id="done" class="button icon approve">Done</a-->
-		
-			<a href="javascript:;" id="delete" class="button icon trash danger delete">Delete</a>
-			<a href="javascript:;" id="add" class="button icon add">Add</a>
+	<div id="container">
+		<div class="todo">
+			<div class="top">
+				<h1>ToDoc</h1>
+				<div class="border"></div>
+			</div>
+			<div class="rippedPaper"></div>
+			<div class="control cf">
+				<div class="main">
+					<!--a href="javascript:;" id="done" class="button icon approve">Done</a-->
+				
+					<a href="javascript:;" id="delete" class="button icon trash danger delete">Delete</a>
+					<a href="javascript:;" id="add" class="button icon add">Add</a>
+				</div>
+				<div class="taskEditAdd">
+					<a href="javascript:;" id="back" class="button icon arrowleft">Back</a>
+					
+					<a href="javascript:;" id="edit" class="button icon edit">Edit</a>
+					<a href="javascript:;" id="save" class="button icon approve save">Save</a>		
+				</div>
+			</div>
+			<div class="content" id="content">
+				
+			</div>	
+			<div class="bottom"></div>
 		</div>
-		<div class="taskEditAdd">
-			<a href="javascript:;" id="back" class="button icon arrowleft">Back</a>
-			
-			<a href="javascript:;" id="edit" class="button icon edit">Edit</a>
-			<a href="javascript:;" id="save" class="button icon approve save">Save</a>		
-		</div>
+		<script type="text/javascript">
+		var admob_vars = {
+		 pubid: 'a14f146fec68187', // publisher id
+		 bgcolor: '356FA8', // background color (hex)
+		 text: 'FFFFFF', // font-color (hex)
+		 test: true // test mode, set to false to receive live ads
+		};
+		</script>
+		<script type="text/javascript" src="http://mmv.admob.com/static/iphone/iadmob.js"></script>
 	</div>
-	<div class="content" id="content">
-		
-	</div>	
-	<div class="bottom"></div>
-</div>
-	<script type="text/javascript">
-	var admob_vars = {
-	 pubid: 'a14f146fec68187', // publisher id
-	 bgcolor: '356FA8', // background color (hex)
-	 text: 'FFFFFF', // font-color (hex)
-	 test: true // test mode, set to false to receive live ads
-	};
-	</script>
-	<script type="text/javascript" src="http://mmv.admob.com/static/iphone/iadmob.js"></script>
-
-</div>
  </body>
 </html>
