@@ -28,6 +28,8 @@ body                                 {
                                      }
 .todo .top h1                        {
                                          color: #fff;
+                                         font-size: 15px;
+                                         font-weight:bold;
                                          line-height: 40px;
                                          text-align: center;
                                          vertical-align: middle;
@@ -90,7 +92,7 @@ body                                 {
                                          list-style-type: none;
                                          line-height: 3em;
                                          vertical-align: middle;
-                                         border:solid #eee;
+                                         border: solid  rgba(0, 0, 0, .3);
                                          border-width:0 0 1px 0;
                                      }
 
@@ -99,6 +101,8 @@ body                                 {
                                                 font-size:14px;
                                                 text-align:center;
                                                 margin:0 auto;
+                                                border: solid  rgba(0, 0, 0, .3);
+                                                border-width:0 0 1px 0;
                                         }
 .todo .content ul li.strike  span.listInd {
                                          text-decoration: line-through;
