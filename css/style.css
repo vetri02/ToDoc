@@ -75,13 +75,13 @@ body                                 {
                                          border-width: 0 1px;
                                          padding: 0 10px 5px 10px;
                                          background-color: #fff;
-                                         background-image: -ms-linear-gradient(#eee .05em, transparent .05em);
+                                         /*background-image: -ms-linear-gradient(#eee .05em, transparent .05em);
                                          background-image: -moz-linear-gradient(#eee .05em, transparent .05em);
                                          background-image: -o-linear-gradient(#eee .05em, transparent .05em);
                                          background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);
                                          background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);
                                          background-image: linear-gradient(#eee .05em, transparent .05em);
-                                         background-size: 100% 3em;
+                                         background-size: 100% 3em;*/
                                          min-height: 150px;
                                          line-height: 3em;
                                          vertical-align: middle;
@@ -90,6 +90,8 @@ body                                 {
                                          list-style-type: none;
                                          line-height: 3em;
                                          vertical-align: middle;
+                                         border:solid #eee;
+                                         border-width:0 0 1px 0;
                                      }
 .todo .content ul li.strike  span.listInd {
                                          text-decoration: line-through;
@@ -113,9 +115,9 @@ body                                 {
                                          -moz-border-radius-bottomleft: 15px;
                                          border-bottom-right-radius: 15px;
                                          border-bottom-left-radius: 15px;
-                                         -moz-box-shadow: 0px 1px 0 rgba(0, 0, 0, .3), 0px 3px 0 #fff, 0px 4px 0 rgba(0, 0, 0, .2), 0px 6px 0 #fff, 0px 7px 0 rgba(0, 0, 0, .1), 0px 9px 0 #fff, 0px 10px 0 rgba(0, 0, 0, .1);
-                                         -webkit-box-shadow: 0px 1px 0 rgba(0, 0, 0, .3), 0px 3px 0 #fff, 0px 4px 0 rgba(0, 0, 0, .2), 0px 6px 0 #fff, 0px 7px 0 rgba(0, 0, 0, .1), 0px 9px 0 #fff, 0px 10px 0 rgba(0, 0, 0, .1);
-                                         box-shadow: 0px 1px 0 rgba(0, 0, 0, .3), 0px 3px 0 #fff, 0px 4px 0 rgba(0, 0, 0, .2), 0px 6px 0 #fff, 0px 7px 0 rgba(0, 0, 0, .1), 0px 9px 0 #fff, 0px 10px 0 rgba(0, 0, 0, .1);
+                                         -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, .3), 0px 3px 1px #fff, 0px 4px 1px rgba(0, 0, 0, .2), 0px 6px 1px #fff, 0px 7px 1px rgba(0, 0, 0, .1), 0px 9px 1px #fff, 0px 10px 1px rgba(0, 0, 0, .1);
+                                         -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, .3), 0px 3px 1px #fff, 0px 4px 1px rgba(0, 0, 0, .2), 0px 6px 1px #fff, 0px 7px 1px rgba(0, 0, 0, .1), 0px 9px 1px #fff, 0px 10px 1px rgba(0, 0, 0, .1);
+                                         box-shadow: 0px 1px 1px rgba(0, 0, 0, .3), 0px 3px 1px #fff, 0px 4px 1px rgba(0, 0, 0, .2), 0px 6px 1px #fff, 0px 7px 1px rgba(0, 0, 0, .1), 0px 9px 1px #fff, 0px 10px 1px rgba(0, 0, 0, .1);
                                      }
 input[type=checkbox]                 { display: none }
 input[type=checkbox] + label         {
