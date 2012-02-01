@@ -99,9 +99,9 @@ var toDo = {
     deleteTask: function() {
         this.checkedLength = $("#content input:checked").length;
         $("#content input:checked").each(
-function() {
-            var chVal = $(this).val();
-            amplify.store(chVal, null)
+                function() {
+                var chVal = $(this).val();
+                amplify.store(chVal, null)
             })
             this.goBack();
     },
