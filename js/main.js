@@ -4,8 +4,14 @@ var toDo = {
         this.taskval = null;
         this.textar = '<p class="charLeft">You have <span id="charsLeft"></span> chars left.</p><textarea name="taskAddition" id="task' + this.taskNo + '" class="textA" placeholder="Add Task Here..."></textarea>';
 
-        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-        var height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
+        this.width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        this.height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
+
+        console.log(this.height);
+
+        this.containerHeight = this.height - 140;
+
+        $("#content").css('height', this.containerHeight);
 
         $("#done").click(function() {
             toDo.done();
@@ -51,7 +57,7 @@ var toDo = {
 
     },
     showList: function() {
-        $('#content').html('<ul class="taskList"></ul>');
+        $('#content').append('<ul class="taskList"></ul>');
         var p = amplify.store();
         for (var key in p) {
             if (p.hasOwnProperty(key)) {
