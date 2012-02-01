@@ -9,7 +9,7 @@ var toDo = {
 
         console.log(this.height);
 
-        this.containerHeight = this.height - 140;
+        this.containerHeight = this.height - 180;
 
         $("#content").css('height', this.containerHeight);
 
@@ -57,7 +57,7 @@ var toDo = {
 
     },
     showList: function() {
-        $('#content').append('<ul class="taskList"></ul>');
+        $('#content').html('<div class="task">Task List</div><ul class="taskList"></ul>');
         var p = amplify.store();
         for (var key in p) {
             if (p.hasOwnProperty(key)) {
