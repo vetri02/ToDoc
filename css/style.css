@@ -75,18 +75,17 @@ body                                 {
                                          z-index: 5;
                                          border: solid  rgba(0, 0, 0, .3);
                                          border-width: 0 1px;
-                                         padding: 0 10px 5px 10px;
+                                         padding: 0 10px 15px 10px;
                                          background-color: #fff;
-                                         /*background-image: -ms-linear-gradient(#eee .05em, transparent .05em);
-                                         background-image: -moz-linear-gradient(#eee .05em, transparent .05em);
-                                         background-image: -o-linear-gradient(#eee .05em, transparent .05em);
-                                         background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);
-                                         background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);
-                                         background-image: linear-gradient(#eee .05em, transparent .05em);
-                                         background-size: 100% 3em;*/
                                          min-height: 150px;
                                          line-height: 3em;
                                          vertical-align: middle;
+                                         -webkit-border-bottom-right-radius: 15px;
+                                         -webkit-border-bottom-left-radius: 15px;
+                                         -moz-border-radius-bottomright: 15px;
+                                         -moz-border-radius-bottomleft: 15px;
+                                         border-bottom-right-radius: 15px;
+                                         border-bottom-left-radius: 15px;
                                      }
 .todo .content ul li                 {
                                          list-style-type: none;
@@ -95,6 +94,17 @@ body                                 {
                                          border: solid  rgba(0, 0, 0, .3);
                                          border-width:0 0 1px 0;
                                      }
+
+.todo .content ul > li:last-child    {
+                                        border-bottom: solid 0px #fff;
+                                        -webkit-border-bottom-right-radius: 15px;
+                                         -webkit-border-bottom-left-radius: 15px;
+                                         -moz-border-radius-bottomright: 15px;
+                                         -moz-border-radius-bottomleft: 15px;
+                                         border-bottom-right-radius: 15px;
+                                         border-bottom-left-radius: 15px;
+                                     }
+
 
 .todo .content .task                    {
                                                 font-weight:bold;
@@ -117,7 +127,7 @@ body                                 {
                                      }
 .todo .bottom                        {
                                          position: relative;
-                                         top: -11px;
+                                         top: -25px;
                                          height: 15px;
                                          background-color: #fff;
                                          -webkit-border-bottom-right-radius: 15px;
