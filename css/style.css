@@ -86,6 +86,7 @@ body                                 {
                                          -moz-border-radius-bottomleft: 15px;
                                          border-bottom-right-radius: 15px;
                                          border-bottom-left-radius: 15px;
+                                         background-clip:content-box;
                                      }
 .todo .content ul li                 {
                                          list-style-type: none;
@@ -96,13 +97,7 @@ body                                 {
                                      }
 
 .todo .content ul > li:last-child    {
-                                        border-bottom: solid 0px #fff;
-                                        -webkit-border-bottom-right-radius: 15px;
-                                         -webkit-border-bottom-left-radius: 15px;
-                                         -moz-border-radius-bottomright: 15px;
-                                         -moz-border-radius-bottomleft: 15px;
-                                         border-bottom-right-radius: 15px;
-                                         border-bottom-left-radius: 15px;
+                                        
                                      }
 
 
