@@ -7,11 +7,9 @@ var toDo = {
         this.width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         this.height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
 
-        console.log(this.height);
-
         this.containerHeight = this.height - 180;
 
-        $("#content").css('height', this.containerHeight);
+        $("#content").css('min-height', this.containerHeight);
 
         $("#done").click(function() {
             toDo.done();
@@ -29,26 +27,15 @@ var toDo = {
             toDo.setVal();
         });
 
-        $("#content").delegate("ul.taskList li input[type=checkbox]", "click", function() {
-            if ($(this).parent().hasClass('strike')) {
-                $(this).parent().removeClass('strike');
-                toDo.check($(this), false);
+        $("#content").delegate("ul.taskList li", "click", function() {
+            if ($(this).find("input[type=checkbox]").prop("checked")) {
+                $(this).find("input[type=checkbox]").prop("checked", false);
+                $(this).removeClass('strike');
+                toDo.check($(this).find("input[type=checkbox]"), false);
             } else {
-                $(this).parent().addClass('strike');
-                toDo.check($(this), true);
-            }
-
-        });
-
-        $("#content").delegate("ul.taskList li span.listInd", "click", function() {
-            if ($(this).siblings("input[type=checkbox]").prop("checked")) {
-                $(this).siblings("input[type=checkbox]").prop("checked", false);
-                $(this).parent().removeClass('strike');
-                toDo.check($(this).siblings("input[type=checkbox]"), false);
-            } else {
-                $(this).siblings("input[type=checkbox]").prop("checked", true);
-                $(this).parent().addClass('strike');
-                toDo.check($(this).siblings("input[type=checkbox]"), true);
+                $(this).find("input[type=checkbox]").prop("checked", true);
+                $(this).addClass('strike');
+                toDo.check($(this).find("input[type=checkbox]"), true);
             }
 
         });
