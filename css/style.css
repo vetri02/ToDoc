@@ -73,7 +73,8 @@ body                                 {
                                          position: relative;
                                          top: -10px;
                                          z-index: 5;
-                                         
+                                         border: solid  rgba(0, 0, 0, .3);
+                                         border-width: 0 1px 1px 1px;
                                          padding: 0 10px 15px 10px;
                                          background-color: #fff;
                                          min-height: 150px;
