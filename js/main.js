@@ -2,7 +2,7 @@ var toDo = {
     init: function() {
 
         this.taskval = null;
-        this.textar = '<p class="charLeft">You have <span id="charsLeft"></span> chars left.</p><textarea name="taskAddition" id="task' + this.taskNo + '" class="textA" placeholder="Add Task Here..."></textarea>';
+        this.textar = '<p class="charLeft">Maximum character limit is <span id="charsLeft">70</span></p><textarea name="taskAddition" id="task' + this.taskNo + '" class="textA" placeholder="Add Task Here..."></textarea>';
 
         this.width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         this.height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
@@ -80,7 +80,7 @@ var toDo = {
         $('.main').hide();
 
         $('#content').html(this.textar);
-        $('.textA').limit('70', '#charsLeft');
+        $('.textA').stop().limit('70');
 
     },
     deleteTask: function() {
