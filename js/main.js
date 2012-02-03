@@ -7,7 +7,7 @@ var toDo = {
         this.width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         this.height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
 
-        this.containerHeight = this.height - 180;
+        this.containerHeight = this.height - 190;
 
         $("#content").css('min-height', this.containerHeight);
 
